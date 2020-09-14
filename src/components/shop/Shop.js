@@ -7,7 +7,7 @@ const Shop = () => {
     const [products, setProducts] = useState(FakeData);
     return (
         <>
-            <div className="text-center mt-5">
+            <div className="text-center mt-3">
                 <Link to=''>
                     <Button>Breakfast</Button>
                 </Link>
@@ -18,7 +18,7 @@ const Shop = () => {
                     <Button>Dinner</Button>
                 </Link>
             </div>
-            <div className="row mt-5">
+            <div className="row mt-3">
                 {
                     products.map(product =><Product product={product} key={product.id}></Product>)
                 }
