@@ -97,7 +97,7 @@ const FakeData = [{
     {
         "id": "13",
         "price": 25.90,
-        "category": "lunch",
+        "category": "dinner",
         "item": "Lorem Ipsum is simply dummy text.",
         "description": "Lorem text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.",
         "image": "https://i.postimg.cc/Y2NTm99d/dinner1.png"
@@ -105,7 +105,7 @@ const FakeData = [{
     {
         "id": "14",
         "price": 22.90,
-        "category": "lunch",
+        "category": "dinner",
         "item": "Lorem Ipsum is simply dummy text.",
         "description": "Lorem text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.",
         "image": "https://i.postimg.cc/2SttfLcS/dinner2.png"
@@ -113,7 +113,7 @@ const FakeData = [{
     {
         "id": "15",
         "price": 27.90,
-        "category": "lunch",
+        "category": "dinner",
         "item": "Lorem Ipsum is simply dummy text.",
         "description": "Lorem text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.",
         "image": "https://i.postimg.cc/vZTKjtvK/dinner3.png"
@@ -121,7 +121,7 @@ const FakeData = [{
     {
         "id": "39.90",
         "price": 37,
-        "category": "lunch",
+        "category": "dinner",
         "item": "Lorem Ipsum is simply dummy text.",
         "description": "Lorem text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.",
         "image": "https://i.postimg.cc/NMqPKqwh/dinner4.png"
@@ -129,7 +129,7 @@ const FakeData = [{
     {
         "id": "24.90",
         "price": 35,
-        "category": "lunch",
+        "category": "dinner",
         "item": "Lorem Ipsum is simply dummy text.",
         "description": "Lorem text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.",
         "image": "https://i.postimg.cc/JhB277vc/dinner5.png"
@@ -137,7 +137,7 @@ const FakeData = [{
     {
         "id": "18",
         "price": 19.90,
-        "category": "lunch",
+        "category": "dinner",
         "item": "Lorem Ipsum is simply dummy text.",
         "description": "Lorem text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.",
         "image": "https://i.postimg.cc/RVX8XDwf/dinner6.png"

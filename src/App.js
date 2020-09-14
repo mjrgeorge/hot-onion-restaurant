@@ -8,12 +8,27 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/home/Home';
+import NotMatch from './components/notMatch/NotMatch';
+import Shop from './components/shop/Shop';
 
 function App() {
   return (
-    <div>
-      <Home></Home>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <Home></Home>
+        </Route>
+        <Route path="/menu/:menuItem">
+          <Home></Home>
+        </Route>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+        <Route path="*">
+          <NotMatch></NotMatch>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -2,8 +2,8 @@ import {Card} from 'react-bootstrap';
 import React from 'react';
 
 const Product = (props) => {
-    const {item, description, price, image} = props.product;
-    console.log(image);
+    const product = props.product;
+    const {item, description, price, image} = product;
     return (
         <div className="col-md-4">
             <Card className="text-center" style={{ width: '18rem', margin: '10px'}}>
