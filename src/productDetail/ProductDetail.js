@@ -1,27 +1,38 @@
-import React, { useState } from 'react';
-import { Card } from 'react-bootstrap';
+import React, { createContext, useState } from 'react';
+import { Button, Card } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import FakeData from '../fakeData/FakeData';
+
+export const CountContext = createContext();
 
 const ProductDetail = () => {
     const {menuId} = useParams();
     const [products, setProducts] = useState(FakeData);
+    let [count, setCount] = useState(1);
+    
         return (
-        <div>
+        <CountContext.Provider value={[count, setCount]}>
             {
                 products.filter(pd=>pd.id===`${menuId}`).map(product=>
-                    <Card className="text-center" style={{ width: '350px', margin: 'auto'}}>
-                        <Card.Img src={product.image}/>
-                        <Card.Body>
-                            <Card.Title>{product.item}</Card.Title>
-                            <Card.Text>{product.description}</Card.Text>
-                            <Card.Text>{product.details}</Card.Text>
-                            <h2>${product.price}</h2>
-                        </Card.Body>
-                    </Card>
+                    <div className="d-flex m-5 p-5">
+                        <div className="p-5 text-center">
+                            <h4>{product.item}</h4>
+                            <p>{product.details}</p>
+                            <h1>${product.price*count}</h1>
+                            <h2>
+                            <Button onClick={()=>setCount(count+1)} variant="outline-warning">+</Button>
+                            <span> {count} </span>
+                            <Button onClick={()=>setCount(count>0?count-1:count=0)} variant="outline-warning">-</Button>
+                            </h2>
+                            <Button variant="secondary" size="lg" block>Added</Button>
+                        </div>
+                        <Card>
+                            <Card.Img className="w-100" src={product.image} alt=""/>
+                        </Card>
+                    </div>
                     )
             }
-        </div>
+        </CountContext.Provider>
     );
 };
 

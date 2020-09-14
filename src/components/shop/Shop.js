@@ -19,6 +19,9 @@ const Shop = () => {
                     products.filter(person => person.category ===`${menuItem}`).map(product =><Product product={product} key={product.id}></Product>)
                 }
             </div>
+            <div className = "text-center">
+                <Button variant="secondary" size="lg" disabled>Order Now</Button>{' '}
+            </div>
         </>
     );
 };

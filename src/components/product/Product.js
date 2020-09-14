@@ -12,12 +12,12 @@ const Product = (props) => {
     }
     return (
         <div className="col-md-4">
-            <Card className="text-center" style={{ width: '18rem', margin: '10px'}}>
+            <Card className="text-center" style={{ width: '350px', margin: '10px'}}>
             <Card.Img src={image}/>
             <Card.Body>
                 <Card.Title>{item}</Card.Title>
                 <Card.Text>{description}</Card.Text>
-                <h2 onClick={()=>handleSelectItem(id)} style={{cursor: 'pointer'}}>${price}</h2>
+                <h3 onClick={()=>handleSelectItem(id)} style={{cursor: 'pointer'}}>${price}</h3>
             </Card.Body>
             </Card>
         </div>
