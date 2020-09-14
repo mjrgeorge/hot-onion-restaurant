@@ -1,15 +1,13 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import Header from '../header/Header';
+import Shop from '../shop/Shop';
+
 
 const Home = () => {
     return (
         <div>
-            
+            <Header></Header>
+            <Shop></Shop>
         </div>
     );
 };
