@@ -11,6 +11,7 @@ import Home from './components/home/Home';
 import NotMatch from './components/notMatch/NotMatch';
 import Shop from './components/shop/Shop';
 import ProductDetail from './productDetail/ProductDetail';
+import Cart from './components/cart/Cart';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/detail/:menuId">
           <ProductDetail></ProductDetail>
+        </Route>
+        <Route path="/cart">
+          <Cart></Cart>
         </Route>
         <Route exact path="/">
           <Home></Home>
